@@ -10,6 +10,8 @@
 <div data-style="<style.json の URL>"></div>
 ```
 
+例: https://codepen.io/miya0001/pen/bGRKJgV
+
 ## この方法によるメリット
 
 * スタイルを YAML で記述できるようになったことで、コメントを入れられるようになった。
