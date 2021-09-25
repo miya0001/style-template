@@ -4,7 +4,11 @@ $name: Geolonia Midnight
 # 主な配色
 $background-color: "#F84646"
 $water-color: "#FAAF25"
+<<<<<<< HEAD
 $road-color: "#FFFFFF"
+=======
+$road-color: "#FFFFCC"
+>>>>>>> 2b7232b37621e3aa7273c4456fb5aaa749b83267
 
 
 # 以下は上級者専用
