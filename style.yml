@@ -2,9 +2,9 @@
 $name: Geolonia Midnight
 
 # 主な配色
-$background-color: "rgba(19, 28, 54, 1)"
-$water-color: "rgba(1, 17, 44, 1)"
-$road-color: "#FFFFCC"
+$background-color: "#F84646"
+$water-color: "#FAAF25"
+$road-color: "#FFFFFF"
 
 
 # 以下は上級者専用
@@ -21,7 +21,7 @@ layers:
 - id: background
   type: background
   paint:
-    background-color: rgba(19, 28, 54, 1)
+    background-color: $background-color
 - id: landcover-glacier
   type: fill
   source: geolonia
