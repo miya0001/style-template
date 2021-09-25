@@ -26,7 +26,7 @@ jobs:
       - name: Convert YAML to Style
         run: |
           cd $GITHUB_WORKSPACE
-          for file in *.csv; { csv2geojson "$file" > ./$(basename -s ".csv" $file).json; }
+          vt-style build style.yml style.json
 
       - name: Deploy the GeoJSON to `gh-pages`
         uses: peaceiris/actions-gh-pages@v3
