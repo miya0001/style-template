@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install the `vt-style`
+        run: |
+          git clone https://github.com/geolonia/vt-style.git
+          cd vt-style
+          npm install
+          npm run build
+          npm install -g .
+
+      - name: Convert YAML to Style
+        run: |
+          cd $GITHUB_WORKSPACE
+          for file in *.csv; { csv2geojson "$file" > ./$(basename -s ".csv" $file).json; }
+
+      - name: Deploy the GeoJSON to `gh-pages`
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          force_orphan: true
