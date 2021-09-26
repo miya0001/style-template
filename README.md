@@ -21,6 +21,6 @@
 
 ## 関連
 
-このリポジトリは、以下で開発中のツールを使用して、Mapbox GL JS ベースのベクトルタイルのスタイルを、JSON ではなく YAML で書けるようにしています。
+このリポジトリは、以下で開発中のツールを GitHub Actions で実行して、Mapbox GL JS ベースのベクトルタイルのスタイルを、JSON ではなく YAML で書けるようにしています。
 
 https://github.com/geolonia/vt-style
