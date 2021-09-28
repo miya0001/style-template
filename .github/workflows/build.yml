@@ -23,7 +23,7 @@ jobs:
           npm run build
           npm install -g .
 
-      - name: Convert YAML to Style
+      - name: Convert the YAML to GeoJSON
         run: |
           cd $GITHUB_WORKSPACE
           charites build style.yml style.json
