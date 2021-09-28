@@ -15,10 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install the `vt-style`
+      - name: Install the `charites`
         run: |
-          git clone https://github.com/geolonia/vt-style.git
-          cd vt-style
+          git clone https://github.com/geolonia/charites.git
+          cd charites
           npm install
           npm run build
           npm install -g .
@@ -26,8 +26,8 @@ jobs:
       - name: Convert YAML to Style
         run: |
           cd $GITHUB_WORKSPACE
-          vt-style build style.yml style.json
-          echo "vt-style" > .gitignore
+          charites build style.yml style.json
+          echo "charites" > .gitignore
 
       - name: Deploy the GeoJSON to `gh-pages`
         uses: peaceiris/actions-gh-pages@v3
