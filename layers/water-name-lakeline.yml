@@ -1,0 +1,22 @@
+id: water-name-lakeline
+type: symbol
+source: geolonia
+source-layer: water_name
+filter:
+  - '=='
+  - $type
+  - LineString
+layout:
+  text-font:
+    - Noto Sans Regular
+  text-size: 14
+  text-field: '{name}'
+  text-max-width: 5
+  text-rotation-alignment: map
+  symbol-placement: line
+  symbol-spacing: 350
+  text-letter-spacing: 0.2
+paint:
+  text-color: '#FFFFFF'
+  text-halo-width: 1.5
+  text-halo-color: '#000000'

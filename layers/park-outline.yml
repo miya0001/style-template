@@ -1,0 +1,15 @@
+id: park-outline
+type: line
+source: geolonia
+source-layer: park
+filter:
+  - '=='
+  - $type
+  - Polygon
+layout:
+  visibility: visible
+paint:
+  line-color: rgba(56, 85, 36, 0.35)
+  line-dasharray:
+    - 3
+    - 3

@@ -1,0 +1,95 @@
+$name: My Style
+
+$background: rgba(19, 28, 54, 1)
+$waterColor: rgba(1, 17, 44, 1)
+$highwayColor: rgba(255, 255, 255, 0.4)
+$textSettings:
+  text-halo-blur: 0.5
+  text-color: "#FFFFFF"
+  text-halo-width: 1
+  text-halo-color: "#000000"
+
+# カスタマイズここまで
+
+version: 8
+name: $name
+metadata: {}
+sources:
+  geolonia:
+    type: vector
+    url: https://api.geolonia.com/v1/sources?key=YOUR-API-KEY
+sprite: https://sprites.geolonia.com/basic-white
+glyphs: https://glyphs.geolonia.com/{fontstack}/{range}.pbf
+layers:
+  - !!inc/file layers/background.yml
+  - !!inc/file layers/landcover-glacier.yml
+  - !!inc/file layers/landuse-commercial.yml
+  - !!inc/file layers/landuse-industrial.yml
+  - !!inc/file layers/park.yml
+  - !!inc/file layers/park-outline.yml
+  - !!inc/file layers/landuse-cemetery.yml
+  - !!inc/file layers/landuse-hospital.yml
+  - !!inc/file layers/landuse-school.yml
+  - !!inc/file layers/landuse-railway.yml
+  - !!inc/file layers/landcover-wood.yml
+  - !!inc/file layers/waterway_tunnel.yml
+  - !!inc/file layers/waterway.yml
+  - !!inc/file layers/water-offset.yml
+  - !!inc/file layers/water.yml
+  - !!inc/file layers/landcover-ice-shelf.yml
+  - !!inc/file layers/tunnel-railway.yml
+  - !!inc/file layers/tunnel-path.yml
+  - !!inc/file layers/tunnel-service-track.yml
+  - !!inc/file layers/tunnel-minor.yml
+  - !!inc/file layers/tunnel-secondary-tertiary.yml
+  - !!inc/file layers/tunnel-trunk-primary.yml
+  - !!inc/file layers/tunnel-motorway.yml
+  - !!inc/file layers/ferry.yml
+  - !!inc/file layers/aeroway-area.yml
+  - !!inc/file layers/aeroway-taxiway.yml
+  - !!inc/file layers/aeroway-runway.yml
+  - !!inc/file layers/highway-area.yml
+  - !!inc/file layers/highway-path.yml
+  - !!inc/file layers/highway-motorway-link.yml
+  - !!inc/file layers/highway-link.yml
+  - !!inc/file layers/highway-minor.yml
+  - !!inc/file layers/highway-secondary-tertiary.yml
+  - !!inc/file layers/highway-primary.yml
+  - !!inc/file layers/highway-trunk.yml
+  - !!inc/file layers/highway-motorway.yml
+  - !!inc/file layers/bridge-motorway-link-casing.yml
+  - !!inc/file layers/bridge-link-casing.yml
+  - !!inc/file layers/bridge-secondary-tertiary-casing.yml
+  - !!inc/file layers/bridge-trunk-primary-casing.yml
+  - !!inc/file layers/bridge-motorway-casing.yml
+  - !!inc/file layers/bridge-path-casing.yml
+  - !!inc/file layers/bridge-path.yml
+  - !!inc/file layers/bridge-motorway-link.yml
+  - !!inc/file layers/bridge-link.yml
+  - !!inc/file layers/bridge-secondary-tertiary.yml
+  - !!inc/file layers/bridge-trunk-primary.yml
+  - !!inc/file layers/bridge-motorway.yml
+  - !!inc/file layers/railway.yml
+  - !!inc/file layers/railway-hatching.yml
+  - !!inc/file layers/cablecar.yml
+  - !!inc/file layers/cablecar-dash.yml
+  - !!inc/file layers/boundary-land-level-4.yml
+  - !!inc/file layers/boundary-water.yml
+  - !!inc/file layers/waterway-name.yml
+  - !!inc/file layers/water-name-lakeline.yml
+  - !!inc/file layers/water-name-ocean.yml
+  - !!inc/file layers/water-name-other.yml
+  - !!inc/file layers/building.yml
+  - !!inc/file layers/building-3d.yml
+  - !!inc/file layers/poi.yml
+  - !!inc/file layers/poi-primary.yml
+  - !!inc/file layers/road_oneway.yml
+  - !!inc/file layers/road_oneway_opposite.yml
+  - !!inc/file layers/road_shield.yml
+  - !!inc/file layers/airport-label-major.yml
+  - !!inc/file layers/place-village.yml
+  - !!inc/file layers/place-town.yml
+  - !!inc/file layers/place-city.yml
+  - !!inc/file layers/place-city-capital.yml
+  - !!inc/file layers/place-country.yml
+  - !!inc/file layers/place-continent.yml

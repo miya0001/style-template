@@ -1,0 +1,18 @@
+id: place-continent
+type: symbol
+source: geolonia
+source-layer: place
+maxzoom: 1
+filter:
+  - '=='
+  - class
+  - continent
+layout:
+  text-font:
+    - Noto Sans Regular
+  text-field: '{name}'
+  text-size: 14
+  text-max-width: 6.25
+  text-transform: uppercase
+  visibility: visible
+paint: $textSettings

@@ -1,0 +1,23 @@
+id: water-offset
+type: fill
+source: geolonia
+source-layer: water
+maxzoom: 8
+filter:
+  - '=='
+  - $type
+  - Polygon
+layout:
+  visibility: none
+paint:
+  fill-opacity: 1
+  fill-color: rgba(0, 0, 0, 1)
+  fill-translate:
+    base: 1
+    stops:
+      - - 6
+        - - 2
+          - 0
+      - - 8
+        - - 0
+          - 0
