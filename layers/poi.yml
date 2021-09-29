@@ -1,0 +1,36 @@
+id: poi
+type: symbol
+source: geolonia
+source-layer: poi
+minzoom: 16
+filter:
+  - all
+  - - '=='
+    - $type
+    - Point
+  - - '>'
+    - rank
+    - 25
+  - - has
+    - name
+layout:
+  text-padding: 2
+  text-font:
+    - Noto Sans Regular
+  text-anchor: top
+  icon-image:
+    - coalesce
+    - - image
+      - - concat
+        - - get
+          - class
+        - '-11'
+    - - image
+      - circle-11
+  text-field: '{name}'
+  text-offset:
+    - 0
+    - 0.6
+  text-size: 12
+  text-max-width: 9
+paint: $textSettings

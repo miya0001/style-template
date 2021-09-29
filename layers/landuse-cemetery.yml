@@ -1,0 +1,10 @@
+id: landuse-cemetery
+type: fill
+source: geolonia
+source-layer: landuse
+filter:
+  - '=='
+  - class
+  - cemetery
+paint:
+  fill-color: rgba(255, 255, 255, 0.1)

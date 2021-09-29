@@ -1,0 +1,27 @@
+id: railway-hatching
+type: line
+source: geolonia
+source-layer: transportation
+filter:
+  - all
+  - - '=='
+    - class
+    - rail
+  - - '!in'
+    - brunnel
+    - tunnel
+layout:
+  visibility: visible
+paint:
+  line-color: rgba(255, 255, 255, 1)
+  line-dasharray:
+    - 6
+    - 4
+  line-width:
+    stops:
+      - - 10
+        - 0.5
+      - - 18
+        - 2
+      - - 22
+        - 18

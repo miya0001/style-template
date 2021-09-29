@@ -1,0 +1,16 @@
+id: place-town
+type: symbol
+source: geolonia
+source-layer: place
+filter:
+  - '=='
+  - class
+  - town
+layout:
+  text-font:
+    - Noto Sans Regular
+  text-size: 14
+  text-field: '{name}'
+  text-max-width: 8
+  visibility: visible
+paint: $textSettings

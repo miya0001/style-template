@@ -1,0 +1,19 @@
+id: landcover-ice-shelf
+type: fill
+source: geolonia
+source-layer: landcover
+filter:
+  - '=='
+  - subclass
+  - ice_shelf
+layout:
+  visibility: visible
+paint:
+  fill-color: '#fff'
+  fill-opacity:
+    base: 1
+    stops:
+      - - 0
+        - 0.9
+      - - 10
+        - 0.3

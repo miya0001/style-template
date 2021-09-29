@@ -1,0 +1,19 @@
+id: landcover-glacier
+type: fill
+source: geolonia
+source-layer: landcover
+filter:
+  - '=='
+  - subclass
+  - glacier
+layout:
+  visibility: visible
+paint:
+  fill-color: rgba(255, 255, 255, 0.05)
+  fill-opacity:
+    base: 1
+    stops:
+      - - 0
+        - 0.9
+      - - 10
+        - 0.3

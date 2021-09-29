@@ -1,0 +1,14 @@
+id: landuse-industrial
+type: fill
+source: geolonia
+source-layer: landuse
+filter:
+  - all
+  - - '=='
+    - $type
+    - Polygon
+  - - '=='
+    - class
+    - industrial
+paint:
+  fill-color: rgba(255, 255, 255, 0.1)

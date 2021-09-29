@@ -1,0 +1,23 @@
+id: place-country
+type: symbol
+source: geolonia
+source-layer: place
+filter:
+  - all
+  - - '=='
+    - class
+    - country
+layout:
+  text-font:
+    - Noto Sans Regular
+  text-field: '{name}'
+  text-size:
+    stops:
+      - - 1
+        - 11
+      - - 4
+        - 17
+  text-transform: uppercase
+  text-max-width: 6.25
+  visibility: visible
+paint: $textSettings
