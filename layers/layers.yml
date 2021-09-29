@@ -1310,9 +1310,9 @@
     text-letter-spacing: 0.2
     symbol-spacing: 350
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.5
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: water-name-lakeline
   type: symbol
   source: geolonia
@@ -1332,9 +1332,9 @@
     symbol-spacing: 350
     text-letter-spacing: 0.2
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.5
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: water-name-ocean
   type: symbol
   source: geolonia
@@ -1358,9 +1358,9 @@
     symbol-spacing: 350
     text-letter-spacing: 0.2
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.5
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: water-name-other
   type: symbol
   source: geolonia
@@ -1390,9 +1390,9 @@
     text-letter-spacing: 0.2
     visibility: visible
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.5
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: building
   type: fill
   source: geolonia
@@ -1468,9 +1468,9 @@
     text-max-width: 9
   paint:
     text-halo-blur: 0.5
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: poi-primary
   type: symbol
   source: geolonia
@@ -1508,9 +1508,9 @@
     text-max-width: 9
   paint:
     text-halo-blur: 0.5
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: road_oneway
   type: symbol
   source: geolonia
@@ -1637,9 +1637,9 @@
     text-optional: true
   paint:
     text-halo-blur: 0.5
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: place-village
   type: symbol
   source: geolonia
@@ -1662,9 +1662,9 @@
     text-max-width: 8
     visibility: visible
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.2
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: place-town
   type: symbol
   source: geolonia
@@ -1681,9 +1681,9 @@
     text-max-width: 8
     visibility: visible
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.2
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
     icon-halo-color: rgba(18, 14, 14, 0)
     icon-color: rgba(255, 255, 255, 1)
 - id: place-city
@@ -1707,9 +1707,9 @@
     text-max-width: 8
     visibility: visible
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.2
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: place-city-capital
   type: symbol
   source: geolonia
@@ -1736,9 +1736,9 @@
     text-anchor: left
     visibility: visible
   paint:
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 1.2
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: place-country
   type: symbol
   source: geolonia
@@ -1763,9 +1763,9 @@
     visibility: visible
   paint:
     text-halo-blur: 1
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 2
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
 - id: place-continent
   type: symbol
   source: geolonia
@@ -1785,6 +1785,6 @@
     visibility: visible
   paint:
     text-halo-blur: 1
-    text-color: "#FFFFFF"
+    text-color: $label-text-color
     text-halo-width: 2
-    text-halo-color: "#000000"
+    text-halo-color: $label-text-halo-color
