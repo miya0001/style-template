@@ -12,7 +12,7 @@ $textSettings:
 # カスタマイズここまで
 
 version: 8
-name: Geolonia Midnight
+name: $name
 metadata: {}
 sources:
   geolonia:
@@ -93,4 +93,3 @@ layers:
   - !!inc/file layers/place-city-capital.yml
   - !!inc/file layers/place-country.yml
   - !!inc/file layers/place-continent.yml
-id: geolonia-midnight
