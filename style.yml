@@ -5,7 +5,8 @@ $name: My Style
 $background-color: "#F84646"
 $water-color: "#FAAF25"
 $road-color: "#FFFFFF"
-
+$label-text-color: "#FFFFFF"
+$label-text-halo-color: "#000000"
 
 # 以下は上級者専用
 version: 8
