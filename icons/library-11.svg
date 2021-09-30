@@ -5,7 +5,7 @@
 	 id="Layer_1" inkscape:version="0.91 r13725" sodipodi:docname="library-11.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="11px"
 	 viewBox="0 0 11 11" style="enable-background:new 0 0 11 11;" xml:space="preserve">
-<path id="path5" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc" d="
+<path style="fill: #fff" id="path5" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc" d="
 	M0,1v7c3.26,0,5.4902,2,5.4902,2S7.76,8,11,8V1C7,1,5.4902,2.7246,5.4902,2.7246S4,1,0,1z M1,2c1.1953-0.0313,3.053,0.4015,4,1.3477
 	L5.5,4L6,3.3477C6.9615,2.4183,8.8009,1.9878,10,2v5C8,7,6.6456,7.8564,5.4902,8.7812C4.3506,7.8533,3,7,1,7V2z M2,3.3027v0.1816
 	c0.8234,0.1688,2.0997,0.6868,3,1.1758V4.4316C4.0828,3.9535,2.8241,3.46,2,3.3027z M9,3.3027C8.1759,3.46,6.9172,3.9535,6,4.4316

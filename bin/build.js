@@ -20,8 +20,8 @@ const publicPath = path.resolve(__dirname, '..');
         file = `@${pxRatio}x`;
     }
 
-    var pngPath = path.join(publicPath, `basic${file}.png`);
-    var jsonPath = path.join(publicPath, `basic${file}.json`);
+    var pngPath = path.join(publicPath, `basic${file}-white.png`);
+    var jsonPath = path.join(publicPath, `basic${file}-white.json`);
 
     // Pass `true` in the layout parameter to generate a data layout
     // suitable for exporting to a JSON sprite manifest file.
