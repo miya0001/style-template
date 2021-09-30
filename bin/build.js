@@ -3,6 +3,7 @@ var fs = require('fs');
 var glob = require('/usr/local/lib/node_modules/glob');
 var path = require('path');
 
+console.log(process.env)
 
 const svgsPath = path.resolve(__dirname, '..', 'icons');
 const publicPath = path.resolve(__dirname, '..');
