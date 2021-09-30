@@ -3,7 +3,7 @@ var fs = require('fs');
 var glob = require('/usr/local/lib/node_modules/glob');
 var path = require('path');
 
-console.log(process.env)
+console.log(process.env.GITHUB_REPOSITORY)
 
 const svgsPath = path.resolve(__dirname, '..', 'icons');
 const publicPath = path.resolve(__dirname, '..');
