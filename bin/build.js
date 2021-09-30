@@ -1,6 +1,6 @@
 var spritezero = require('/usr/local/lib/node_modules/@mapbox/spritezero');
 var fs = require('fs');
-var glob = require('glob');
+var glob = require('/usr/local/lib/node_modules/glob');
 var path = require('path');
 
 

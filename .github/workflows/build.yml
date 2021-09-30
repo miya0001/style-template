@@ -32,7 +32,7 @@ jobs:
       - name: Build Icons
         run: |
           cd $GITHUB_WORKSPACE
-          npm install -g @mapbox/spritezero
+          npm install -g @mapbox/spritezero glob
           node bin/build.js
 
       - name: Deploy the GeoJSON to `gh-pages`
