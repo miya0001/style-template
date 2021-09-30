@@ -3,7 +3,9 @@ var fs = require('fs');
 var glob = require('/usr/local/lib/node_modules/glob');
 var path = require('path');
 
-console.log(process.env.GITHUB_REPOSITORY)
+const test = fs.readFileSync(path.resolve(__dirname, '..', 'style.yml'))
+
+console.log(test)
 
 const svgsPath = path.resolve(__dirname, '..', 'icons');
 const publicPath = path.resolve(__dirname, '..');
