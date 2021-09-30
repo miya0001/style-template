@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Icons
         run: |
-          npm install -g @mapbox/spritezero
+          npm install @mapbox/spritezero
           cd $GITHUB_WORKSPACE
           node bin/build.js
 
