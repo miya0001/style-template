@@ -4,8 +4,8 @@ var glob = require('/usr/local/lib/node_modules/glob');
 var path = require('path');
 
 
-const svgsPath = path.resolve(__dirname, '..', 'icons')
-const publicPath = path.resolve(__dirname, '..')
+const svgsPath = path.resolve(__dirname, '..', 'icons');
+const publicPath = path.resolve(__dirname, '..');
 
 [1, 2].forEach(function(pxRatio) {
     var svgs = glob.sync(path.join(svgsPath, `*.svg`))
@@ -18,7 +18,7 @@ const publicPath = path.resolve(__dirname, '..')
 
     var file = ''
     if (pxRatio > 1) {
-        file = `@${pxRatio}x`
+        file = `@${pxRatio}x`;
     }
 
     var pngPath = path.join(publicPath, `${file}.png`);
