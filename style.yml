@@ -18,7 +18,7 @@ sources:
   geolonia:
     type: vector
     url: https://api.geolonia.com/v1/sources?key=YOUR-API-KEY
-sprite: https://raw.githubusercontent.com/${{ env.GITHUB_REPOSITORY }}/gh-pages/basic
+sprite: https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/gh-pages/basic
 glyphs: https://glyphs.geolonia.com/{fontstack}/{range}.pbf
 layers:
   - !!inc/file layers/background.yml
