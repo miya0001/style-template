@@ -15,12 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build Icons
-        run: |
-          cd $GITHUB_WORKSPACE
-          npm install -g @mapbox/spritezero glob
-          node bin/build.js
-
       - name: Install the `charites`
         run: |
           git clone https://github.com/geolonia/charites.git
@@ -32,9 +26,16 @@ jobs:
       - name: Convert the YAML to GeoJSON
         run: |
           cd $GITHUB_WORKSPACE
+          node ./bin/replace-env.js
           charites build style.yml style.json
           echo "charites" > .gitignore
 
+      - name: Build Icons
+        run: |
+          cd $GITHUB_WORKSPACE
+          npm install -g @mapbox/spritezero glob
+          node bin/build.js
+          
       - name: Deploy the GeoJSON to `gh-pages`
         uses: peaceiris/actions-gh-pages@v3
         with:

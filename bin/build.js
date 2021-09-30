@@ -3,10 +3,6 @@ var fs = require('fs');
 var glob = require('/usr/local/lib/node_modules/glob');
 var path = require('path');
 
-const test = fs.readFileSync(path.resolve(__dirname, '..', 'style.yml'), {encoding: 'utf-8'})
-
-console.log(test)
-
 const svgsPath = path.resolve(__dirname, '..', 'icons');
 const publicPath = path.resolve(__dirname, '..');
 
