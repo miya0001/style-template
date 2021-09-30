@@ -29,6 +29,12 @@ jobs:
           charites build style.yml style.json
           echo "charites" > .gitignore
 
+      - name: Build Icons
+        run: |
+          cd $GITHUB_WORKSPACE
+          npm install -g @mapbox/spritezero glob
+          node bin/build.js
+
       - name: Deploy the GeoJSON to `gh-pages`
         uses: peaceiris/actions-gh-pages@v3
         with:
