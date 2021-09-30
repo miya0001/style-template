@@ -3,7 +3,7 @@ var fs = require('fs');
 var glob = require('/usr/local/lib/node_modules/glob');
 var path = require('path');
 
-const test = fs.readFileSync(path.resolve(__dirname, '..', 'style.yml'))
+const test = fs.readFileSync(path.resolve(__dirname, '..', 'style.yml'), {encoding: 'utf-8'})
 
 console.log(test)
 
